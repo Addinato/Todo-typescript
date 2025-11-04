@@ -1,12 +1,13 @@
+import type { TodoTask } from './modules/TodoTask';
 import './style.css'
 
 
-interface ToDoItem {
+/* interface ToDoItem {
     text: string;
     done: boolean;
-  }
+  } */
   
-  const toDo: ToDoItem[] = [];
+  const toDo: TodoTask[] = [];
   
   const toDoList = document.getElementById("toDoList") as HTMLUListElement;
   const addButton = document.getElementById("addButton") as HTMLButtonElement;
@@ -24,7 +25,7 @@ interface ToDoItem {
   
     if (value !== "") {
       // Lägg till i arrayen
-      toDo.push({ text: value, done: false });
+      toDo.push({ todoText: value, doneTask: false });
   
       // Skapa nytt <li>
       const item = document.createElement("li");

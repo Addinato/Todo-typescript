@@ -1,16 +1,6 @@
 import './style.css'
 
 
-// const theForm = document.getElementById("theForm") as HTMLFormElement;
-
-// theForm.addEventListener("submit", handleSubmit);
-
-// let toDo = JSON.parse(localStorage.getItem("toDo") || "[]" ) as TodoTask[];
-
-// function saveList (){
-//     localStorage.setItem("toDo", JSON.stringify(toDo));
-// }
-
 interface ToDoItem {
     text: string;
     done: boolean;
